@@ -11,3 +11,6 @@ This file contains the example lists for Steve the Dev's PHP tutorials
 
 ## Lists ##
 * Lists/SinglyLinkedList.php : Singly Linked List
+
+# Related Entries #
+[Steve the Dev: Implementing the Singly Linked List](https://www.stevethedev.com/blog/programming/implementing-singly-linked-list)
