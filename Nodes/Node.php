@@ -31,6 +31,9 @@ namespace SD\Nodes;
 use SD\Nodes\Node;
 use SD\Nodes\NodeInterface;
 
+/**
+ * Every node should carry a value
+ */
 class Node implements NodeInterface
 {
     /**

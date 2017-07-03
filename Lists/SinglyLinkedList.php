@@ -33,6 +33,9 @@ use OutOfBoundsException;
 use SD\Lists\ListInterface;
 use SD\Nodes\SinglyLinkedNode;
 
+/**
+ * A Singly Linked List only tracks nodes in one direction
+ */
 class SinglyLinkedList implements ListInterface
 {
     /**

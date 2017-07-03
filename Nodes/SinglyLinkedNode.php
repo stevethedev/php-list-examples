@@ -32,6 +32,9 @@ namespace SD\Nodes;
 use SD\Nodes\Node;
 use SD\Nodes\SinglyLinkedNodeInterface;
 
+/**
+ * Every Singly Linked Node should track the next element in the chain
+ */
 class SinglyLinkedNode extends Node implements SinglyLinkedNodeInterface
 {
     /**
