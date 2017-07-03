@@ -26,48 +26,13 @@
  * @copyright 2017 Steven Jimenez
  * @license MIT
  */
-namespace SD\Nodes;
 
-use SD\Nodes\Node;
-use SD\Nodes\NodeInterface;
+namespace SD\Lists;
 
-/**
- * Every node should carry a value
- */
-class Node implements NodeInterface
+use SD\Lists\ListInterface;
+
+interface LinkedListInterface extends ListInterface
 {
-    /**
-     * SinglyLinkedNode Constructor
-     *
-     * @param mixed $value Value to hold within the node
-     */
-    public function __construct($value)
-    {
-        $this->value = $value;
-    }
-
-    /**
-     * Retrieves the value contained within the node
-     * @return mixed
-     */
-    public function getValue()
-    {
-        return $this->value;
-    }
-
-    /**
-     * Sets the value contained within the node
-     * @param mixed $value value to carry
-     * @return $this
-     */
-    public function setValue($value)
-    {
-        return $this->value = $value;
-    }
-
-    /**
-     * Value being carried by this node
-     * @var mixed
-     */
-    protected $value;
+    // protected function getNode($index);
+    // protected function createNode($value);
 }

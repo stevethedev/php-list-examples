@@ -34,6 +34,7 @@ require_once(BASE_DIR . '/Nodes/Node.php');
 require_once(BASE_DIR . '/Nodes/SinglyLinkedNodeInterface.php');
 require_once(BASE_DIR . '/Nodes/SinglyLinkedNode.php');
 require_once(BASE_DIR . '/Lists/ListInterface.php');
+require_once(BASE_DIR . '/Lists/LinkedListInterface.php');
 require_once(BASE_DIR . '/Lists/SinglyLinkedList.php');
 
 // Get our Linked List ready

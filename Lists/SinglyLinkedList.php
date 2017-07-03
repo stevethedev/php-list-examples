@@ -30,13 +30,13 @@
 namespace SD\Lists;
 
 use OutOfBoundsException;
-use SD\Lists\ListInterface;
+use SD\Lists\LinkedListInterface;
 use SD\Nodes\SinglyLinkedNode;
 
 /**
  * A Singly Linked List only tracks nodes in one direction
  */
-class SinglyLinkedList implements ListInterface
+class SinglyLinkedList implements LinkedListInterface
 {
     /**
      * Creates a singly-linked list data structure
@@ -58,7 +58,7 @@ class SinglyLinkedList implements ListInterface
      */
     public function insert($value, $index = null)
     {
-        $node = new SinglyLinkedNode($value);
+        $node = $this->createNode($value);
 
         if (is_null($index) && is_null($this->headNode)) {
             $this->headNode = $node;
@@ -177,6 +177,15 @@ class SinglyLinkedList implements ListInterface
             $node = $node->getNode();
         }
         return $node;
+    }
+
+    /**
+     * Creates a node
+     * @return  SinglyLinkedNode
+     */
+    protected function createNode($value)
+    {
+        return new SinglyLinkedNode($value);
     }
 
     protected $headNode;
